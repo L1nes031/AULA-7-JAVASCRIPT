@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device, initial-scale=1.0">
     <title>Teste</title>
 </head>
-
-<body>
-    <p id="muda-botao"></p>
-    <button onclick="exibirMensagem()">Aperte aqui</button>
+ <body>
+    <input type="text" id="inputField" placeholder="DigiteSeuNome">
+    <button onclick="pegarNome()">Enviar</button>
     <script>
-        /**Atividade 2**/
-       function exibirMensagem() {
-       document.getElementById("muda-botao").textContent = "melhor teste senai"
-       }
-       </script>
-</body>
-</html>
+        function pegarNome(){
+            let nome = document.getElementById('inputField').value;
+            alert(`ola, ${nome} !`);
+        }
+    </script>
+ </body>
